@@ -15,27 +15,16 @@ int _printf(const char *format, ...)
 	va_list args;
 
 	va_start(args, format);
-
 	if (format == NULL)
 		return (-1);
 	while (format[i])
 	{
-		if (format[i] != '%')
+		if ((format[i] == '%' && format[i + 1] == 'r') || format[i] != '%')
 		{
 			cnt += _putchar(format[i]);
 			i++;
 			continue;
 		}
-
-		if (format[i] == '%' && format[i + 1] == 'r')
-		{
-			cnt += _putchar(format[i]);
-			i++;
-			continue;
-		}
-
-
-
 		if (format[i + 1] == '%')
 		{
 			cnt += _putchar(format[++i]);
@@ -67,7 +56,6 @@ int _printf(const char *format, ...)
  * @b: int
  * Return: int
  */
-
 int get_base_len(int n, int b)
 {
 	int len = 0;
