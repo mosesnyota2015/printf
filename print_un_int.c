@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * pr_un_int - prints the octa representation of a number
+ * print_un_int - prints the octa representation of a number
  * @args: parameter variable list va_list
  * Return: int
  */
 
-int pr_un_int(va_list args)
+int print_un_int(va_list args)
 {
 	unsigned int num = va_arg(args, unsigned int);
 	int cnt = 0;

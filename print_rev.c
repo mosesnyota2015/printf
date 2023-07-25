@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * pr_rev - prints the reverse version of a string
+ * print_rev - prints the reverse version of a string
  * @args: va_list varable list
  * Return: int
  */
 
 
-int pr_rev(va_list args)
+int print_rev(va_list args)
 {
 	int cnt = 0, s_len;
 	char *s = va_arg(args, char *);

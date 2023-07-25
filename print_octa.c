@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * pr_octa - prints the octa representation of a number
+ * print_octa - prints the octa representation of a number
  * @args: va_list variable list
  * Return: int
  */
 
 
-int pr_octa(va_list args)
+int print_octa(va_list args)
 {
 	unsigned int num = va_arg(args, unsigned int);
 	int cnt = 0;

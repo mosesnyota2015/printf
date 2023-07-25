@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * pr_non_prt - prints non-printable characters
+ * print_non_prt - prints non-printable characters
  * @args: va_list variable list
  * Return: int
  */
 
-int pr_non_prt(va_list args)
+int print_non_prt(va_list args)
 {
 	int i = 0, cnt = 0;
 	char *s = va_arg(args, char *);

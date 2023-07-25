@@ -2,13 +2,13 @@
 
 
 /**
- * pr_bin - prints the binary representation of a number
+ * print_bin - prints the binary representation of a number
  * @args: va_list
  * Return: unsigned int
  */
 
 
-int pr_bin(va_list args)
+int print_bin(va_list args)
 {
 	unsigned int num = va_arg(args, unsigned int);
 	int cnt = 0;

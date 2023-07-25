@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * pr_rot13 - prints the encrypted rot13 version of a string
+ * print_rot - prints the encrypted rot13 version of a string
  * @args: va_list variable list
  * Return: int
  */
 
-int pr_rot13(va_list args)
+int print_rot(va_list args)
 {
 	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char rapha[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";

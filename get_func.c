@@ -10,19 +10,19 @@
 int (*get_func(const char id))(va_list args)
 {
 	prv_t prv[] = {
-		{'c', pr_char},
-		{'s', pr_str},
-		{'b', pr_bin},
-		{'d', pr_dec},
-		{'i', pr_dec},
-		{'u', pr_un_int},
-		{'o', pr_octa},
-		{'x', pr_hex},
-		{'X', pr_heX},
-		{'S', pr_non_prt},
-		{'r', pr_rev},
-		{'R', pr_rot13},
-		{'p', pr_ptr}
+		{'c', print_char},
+		{'s', print_str},
+		{'b', print_bin},
+		{'d', print_dec},
+		{'i', print_dec},
+		{'u', print_un_int},
+		{'o', print_octa},
+		{'x', print_hex},
+		{'X', print_heX},
+		{'S', print_non_prt},
+		{'r', print_rev},
+		{'R', print_rot},
+		{'p', print_ptr}
 	};
 
 	const int PRV_LEN = 13;

@@ -2,12 +2,12 @@
 
 
 /**
- * pr_ptr - prints the memory address of a variable
+ * print_ptr - prints the memory address of a variable
  * @args: va_list variable list
  * Return: int
  */
 
-int pr_ptr(va_list args)
+int print_ptr(va_list args)
 {
 	int cnt = 0;
 	unsigned long int addr = va_arg(args, unsigned long int);

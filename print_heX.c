@@ -2,12 +2,12 @@
 
 
 /**
- * pr_heX - prints the hexidecimal representation of a number
+ * print_heX - prints the hexidecimal representation of a number
  * @args: va_list
  * Return: int
  */
 
-int pr_heX(va_list args)
+int print_heX(va_list args)
 {
 	int cnt = 0;
 	unsigned int num = va_arg(args, unsigned int);

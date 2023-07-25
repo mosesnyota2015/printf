@@ -2,12 +2,12 @@
 #include <limits.h>
 
 /**
- * pr_dec - prints the decimal representation of a number
+ * print_dec - prints the decimal representation of a number
  * @args: variable va_list
  * Return: int
  */
 
-int pr_dec(va_list args)
+int print_dec(va_list args)
 {
 	int num = va_arg(args, unsigned int);
 	int cnt = 0;

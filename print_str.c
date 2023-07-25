@@ -2,13 +2,13 @@
 #include <string.h>
 
 /**
- * pr_str - prints a string to standard output stream
+ * print_str - prints a string to standard output stream
  * @args: va_list variable lists
  * Return: int
  */
 
 
-int pr_str(va_list args)
+int print_str(va_list args)
 {
 	char *s = va_arg(args, char *);
 	int len = 0;
